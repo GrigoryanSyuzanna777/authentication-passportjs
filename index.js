@@ -9,8 +9,7 @@ let users = [];
 
 const app = express();
 
-app.use(
-    session({
+app.use(session({
         secret: process.env.SESSION_SECRET,
         resave: false,
         saveUninitialized: false,
